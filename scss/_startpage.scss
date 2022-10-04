@@ -9,9 +9,9 @@
     font-family: 'Times New Roman', Times, serif;
   }
   nav{
-    background: rgba(0, 0, 0, 0.349);
+    background: rgba(131, 131, 131, 0.349);
     position: absolute;
-    height: 80px;
+    height: 60px;
     width: 100%;
   }
   label.logo{
@@ -27,8 +27,7 @@
   }
   nav ul li{
     display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
+    line-height: 60px;
   }
   nav ul li a{
     color: white;
@@ -67,25 +66,23 @@
       display: block;
     }
     ul{
-      position: fixed;
+      position: absolute;
       width: 100%;
-      height: 100vh;
-      background: #2c3e50;
-      top: 80px;
-      left: -100%;
+      height: 300px;
+      background: rgba(131, 131, 131, 0.349);     
       text-align: center;
       transition: all .5s;
     }
     nav ul li{
       display: block;
-      margin: 50px 0;
+      margin-top: 80px;
       line-height: 30px;
     }
     nav ul li a{
-      font-size: 20px;
+      font-size: 15px;
     }
     #check:checked ~ ul{
-      left: 0;
+      top: 80px;
     }
   }
   section{
@@ -93,9 +90,15 @@
     height: 100vh;
     background: url("./../assets/negative-space-black-forest-dawn.jpg") no-repeat;
     background-size: cover;
+    background-position: center;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
+
+  section p, h1 {
+    padding: 17px;
+  }
+  
