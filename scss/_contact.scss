@@ -9,5 +9,38 @@ a {
 
 .contact {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 70px 0;
+}
+
+p {
+    padding: 5px;
+}
+
+
+a {
+    display: flex;
+    padding: 5px;
+}
+
+.fa-brands {
+    padding-right: 5px;
+}
+
+
+@media (max-width: 858px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .one , .two {
+        padding-bottom: 15px;
+    }
+
+.fa-brands {
+    padding-right: 5px;
+}
 }
