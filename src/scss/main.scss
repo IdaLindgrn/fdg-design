@@ -1,3 +1,6 @@
 @use "startpage";
 @use "aboutus";
 @use "contact";
+html {
+    scroll-behavior: smooth;
+}
